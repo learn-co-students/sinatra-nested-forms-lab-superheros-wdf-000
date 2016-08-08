@@ -1,5 +1,4 @@
 require 'sinatra/base'
-require './config/environment'
 
 class App < Sinatra::Base
 
@@ -18,8 +17,7 @@ class App < Sinatra::Base
       end
       # return all heroes
       @heroes = Hero.all
-
-      erb :super_hero.erb
+      erb :super_hero
     end
 
 end
