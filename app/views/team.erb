@@ -1,3 +1,24 @@
-
-
-
+<h1> <%= @team.name %> </h1>
+<br/>
+<h2> Team Motto: <%= @team.motto %> </h2>
+<br/>
+<% hero_one = @all_hero[0] %>
+<h2>Hero Name: <%= hero_one.name %></h2>
+<p>Hero power: <%= hero_one.power %>
+<br/>
+  Hero biography: <%= hero_one.bio %>
+</p>
+<br/>
+<% hero_two = @all_hero[1] %>
+<h2>Hero Name: <%= hero_two.name %></h2>
+<p>Hero power: <%= hero_two.power %>
+  <br/>
+  Hero biography: <%= hero_two.bio %>
+</p>
+<br/>
+<% hero_three = @all_hero[2] %>
+<h2>Hero Name: <%= hero_three.name %></h2>
+<p>Hero power: <%= hero_three.power %>
+  <br/>
+  Hero biography: <%= hero_three.bio %>
+</p>
