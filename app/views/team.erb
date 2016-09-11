@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><%= @t_name %></h1>
+    <h2>Team Motto: <%= @t_motto %></h2>
 
-
-
+    <% @t_members.each.with_index do |hero, index| %>
+    <h2>Hero Name: <%= @hero_n[index] %></h2>
+    <p>
+      Hero power: <%= @hero_p[index] %>
+      <br>
+      Hero biography: <%= @hero_b[index] %>
+    </p>
+    <% end %>
+  </body>
+</html>
