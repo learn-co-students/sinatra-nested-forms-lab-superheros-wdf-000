@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Your Team</title>
+</head>
+<body>
+	<h1><%= "#{@team[:name]}" %></h1>
+	<p><%= "Team Motto: #{@team[:motto]}!" %></p>
 
+	<% @team[:members].each do |hero| %>
+	<p><%= "Hero Name: #{hero[:name]}"%></p>
+	<p><%= "Hero power: #{hero[:power]}"%></p>
+	<p><%= "Hero biography: #{hero[:bio]}"%></p>
+	<% end %>
+</body>
+</html>
 
 
